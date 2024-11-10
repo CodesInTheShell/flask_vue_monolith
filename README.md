@@ -28,7 +28,7 @@ This is a flask with vuejs boilerplace code to get you starting.
 `docker build -t python-flask:latest .`
 
 - Deploy the container<br>
-`minikube kubectl apply -f deployment.yaml`
+`kubectl apply -f deployment.yaml`
 
 - Start the service to expose our app<br>
 `kubectl apply -f service.yaml`
