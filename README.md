@@ -14,7 +14,7 @@
 - Clone simple flask app https://github.com/CodesInTheShell/flask_vue_monolith
 
 
-- Start minikube cluster
+- Start minikube cluster <br>
   `minikube start`
 
 - We need to run docker commands inside minikube and not on host computer (unless you want to pull image from container registry)
