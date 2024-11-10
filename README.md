@@ -15,10 +15,10 @@
 
 
 - Start minikube cluster
-minikube start
+- minikube start
 
 - We need to run docker commands inside minikube and not on host computer (unless you want to pull image from container registry)
-eval $(minikube docker-env)
+  eval $(minikube docker-env)
 
 - Sneak peek on current docker images (starting with kube related images)
 docker image ls
