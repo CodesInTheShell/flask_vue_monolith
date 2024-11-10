@@ -17,30 +17,30 @@
 - Start minikube cluster <br>
   `minikube start`
 
-- We need to run docker commands inside minikube and not on host computer (unless you want to pull image from container registry)
-  eval $(minikube docker-env)
+- We need to run docker commands inside minikube and not on host computer (unless you want to pull image from container registry)<br>
+  `eval $(minikube docker-env)`
 
-- Sneak peek on current docker images (starting with kube related images)
-docker image ls
+- Sneak peek on current docker images (starting with kube related images)<br>
+`docker image ls`
 
-- Build our flask app image
-docker build -t python-flask:latest .
+- Build our flask app image<br>
+`docker build -t python-flask:latest .`
 
-- Deploy the container
-minikube kubectl apply -f deployment.yaml
+- Deploy the container<br>
+`minikube kubectl apply -f deployment.yaml`
 
-- Start the service to expose our app
-kubectl apply -f service.yaml
+- Start the service to expose our app<br>
+`kubectl apply -f service.yaml`
 
-- Check our app is up and running
-kubectl get pods
-kubectl get svc
+- Check our app is up and running<br>
+`kubectl get pods`
+`kubectl get svc`
 
-- Actual exposing the app by minikube
-minikube service python-flask-service --url
+- Actual exposing the app by minikube<br>
+`minikube service python-flask-service --url`
 
 - Clean up
-kubectl delete all --all
+`kubectl delete all --all`
 
 
 ## Summary of steps
