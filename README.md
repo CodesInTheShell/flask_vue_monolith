@@ -1,14 +1,15 @@
 
+## Flask Vuejs Monolith application boilerplate
+This is a flask with vuejs boilerplace code to get you starting.
 
+## For minikube or kubernetes tutorial
 
-# For minikube or kubernetes tutorial
-
-## Assumptions
+### Assumptions
 - Assuming you have basic understanding on docker, kubernetes cluster (holds everything), pods (where docker contianer is), nodes (the server, or virtual machine or ec2 aws)
 - Assuming you are watching this video because you already have idea of what is kubernetes vs minikube. So let's roll.
 
 
-## STEPS
+### STEPS
 
 - Install minikube https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download
 - Clone simple flask app https://github.com/CodesInTheShell/flask_vue_monolith
@@ -43,7 +44,7 @@
 `kubectl delete all --all`
 
 
-## Summary of steps
+### Summary of steps
 - Create a minikube cluster
 - Build an image
 - deploy the container with deployment.yaml
