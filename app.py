@@ -11,4 +11,4 @@ def me():
     return { "success": True, "data": "My Name is what"}
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
